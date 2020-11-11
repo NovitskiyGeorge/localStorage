@@ -38,6 +38,7 @@
 
 
 
+<<<<<<< HEAD
 // let text = document.querySelector('#text');
 // let btn = document.querySelector('.btn');
 
@@ -89,13 +90,37 @@
 
 // console.log(`Сумма всех элементов массива = ${sum}`);
 // console.log(`Произведение всех элементов массива = ${multiple}`);
+=======
+let text = document.querySelector('#text');
+let btn = document.querySelector('.btn');
 
 
+function init() {
+const STORAGE_COUNTER = 'count-number';
+let count = localStorage.getItem(STORAGE_COUNTER);
+if (count === null) {
+    localStorage.setItem(STORAGE_COUNTER, 1);
+    alert('Hello bro');
+    return;
+} else if(count % 2 == 0) {
+    alert('Hello bro');
+}
+count = Number.parseInt(count);
+count++; // count++;
+localStorage.setItem(STORAGE_COUNTER, count);
+text.value = `Hello ${localStorage.getItem(STORAGE_COUNTER)} time!` ;
+>>>>>>> master
+
+
+<<<<<<< HEAD
 // метод forEach
 
 let arr = [1, 2, 3, 4, 1234];
 let sum = 0;
 let multiple = 1;
+=======
+init();
+>>>>>>> master
 
 arr.forEach(function(item) {
     sum += item;
