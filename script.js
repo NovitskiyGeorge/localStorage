@@ -70,3 +70,5 @@ btn.addEventListener('click', function() {
     text.value = localStorage.getItem('textArea');
 
 });
+
+// new branch test merge
