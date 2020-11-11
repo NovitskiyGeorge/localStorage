@@ -56,12 +56,8 @@ count = Number.parseInt(count);
 count++; // count++;
 localStorage.setItem(STORAGE_COUNTER, count);
 text.value = `Hello ${localStorage.getItem(STORAGE_COUNTER)} time!` ;
-// if(count % 2 != 0 || count == 1) {
-//     alert('Hello bro');
-// }
 
 }
-
 
 init();
 
